@@ -1,0 +1,103 @@
+@import url('colors.css');
+
+.home-button {
+    height: 45px;
+    position: absolute;
+    top: 40px;
+    left: 60px;
+}
+
+.menu-button {
+    width: 60px;
+    position: absolute;
+    top: 40px;
+    right: 60px;
+}
+
+.background-stoum-grid {
+    position: absolute;
+    width: 100%;
+    height: 0px;
+    /*7000px*/
+    --color: #f7f5f8ab;
+    background-color: transparent;
+    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(24%, transparent), color-stop(25%, var(--color)), color-stop(26%, var(--color)), color-stop(27%, transparent), color-stop(74%, transparent), color-stop(75%, var(--color)), color-stop(76%, var(--color)), color-stop(77%, transparent), to(transparent)),
+        -webkit-gradient(linear, left top, right top, color-stop(24%, transparent), color-stop(25%, var(--color)), color-stop(26%, var(--color)), color-stop(27%, transparent), color-stop(74%, transparent), color-stop(75%, var(--color)), color-stop(76%, var(--color)), color-stop(77%, transparent), to(transparent));
+    background-image: linear-gradient(0deg, transparent 24%, var(--color) 25%, var(--color) 26%, transparent 27%, transparent 74%, var(--color) 75%, var(--color) 76%, transparent 77%, transparent),
+        linear-gradient(90deg, transparent 24%, var(--color) 25%, var(--color) 26%, transparent 27%, transparent 74%, var(--color) 75%, var(--color) 76%, transparent 77%, transparent);
+    background-size: 200px 200px;
+}
+
+.entete {
+    position: relative;
+    width: 76%;
+    height: 300px;
+    background-color: var(--primary-color);
+    border-radius: 50px;
+    top: -50px;
+    left: 12%;
+    margin-bottom: 0px;
+    text-align: center;
+}
+
+.project-name {
+    position: relative;
+    color: #fff;
+    font-size: 125px;
+    margin: 0;
+    font-weight: bold;
+    text-shadow: #ffffff2f 4px 4px 10px;
+    top: 130px;
+}
+
+.description {
+    position: relative;
+    height: auto;
+    width: 80%;
+    left: 10%;
+    margin-bottom: 60px;
+}
+
+.description-category {
+    width: 60%;
+    margin-inline: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: auto;
+}
+
+.description-title {
+    font-size: 30px;
+    color: var(--second-color);
+    font-weight: bold;
+}
+
+.description-info {
+    font-size: 20px;
+    color: var(--second-color);
+    padding-left: 20px;
+}
+
+.description-text {
+    position: absolute;
+    width: 35%;
+    right: 20px;
+    top: 20px;
+    height: auto;
+    font-size: 20px;
+    color: var(--second-color);
+}
+
+.presentation-page {
+    background-color: #fbf8ff;
+    margin-bottom: 60px;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 1150px;
+    box-shadow: #361d5c51 0px 0px 9px;
+}
+
+.presentation-page img {
+    width: 100%;
+}

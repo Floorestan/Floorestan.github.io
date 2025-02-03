@@ -1,0 +1,62 @@
+/* mettre les bordures pour voir les blocks : border: 2px solid #000000; */
+@import url('colors.css');
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    overflow-x: hidden;
+}
+
+h2 {
+    display: inline-block;
+    font-size: 40px;
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+.header {
+    background-color: var(--primary-color);
+    color: #fff;
+    text-align: center;
+    padding: 40px 20px;
+    position: relative;
+    font-weight: bold;
+    height: 300px;
+}
+
+.footer {
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 40px 20px;
+    position: relative;
+    height: 80px;
+    margin-top: 75px;
+}
+
+.footer-copyright {
+    position: absolute;
+    bottom: 50px;
+    left: 40px;
+    font-size: 15px;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.background-grid {
+    position: absolute;
+    width: 100%;
+    height: 0px;
+    /*1450*/
+    --color: #f7f5f8ab;
+    background-color: transparent;
+    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(24%, transparent), color-stop(25%, var(--color)), color-stop(26%, var(--color)), color-stop(27%, transparent), color-stop(74%, transparent), color-stop(75%, var(--color)), color-stop(76%, var(--color)), color-stop(77%, transparent), to(transparent)),
+        -webkit-gradient(linear, left top, right top, color-stop(24%, transparent), color-stop(25%, var(--color)), color-stop(26%, var(--color)), color-stop(27%, transparent), color-stop(74%, transparent), color-stop(75%, var(--color)), color-stop(76%, var(--color)), color-stop(77%, transparent), to(transparent));
+    background-image: linear-gradient(0deg, transparent 24%, var(--color) 25%, var(--color) 26%, transparent 27%, transparent 74%, var(--color) 75%, var(--color) 76%, transparent 77%, transparent),
+        linear-gradient(90deg, transparent 24%, var(--color) 25%, var(--color) 26%, transparent 27%, transparent 74%, var(--color) 75%, var(--color) 76%, transparent 77%, transparent);
+    background-size: 200px 200px;
+}

@@ -1,0 +1,111 @@
+@import url('colors.css');
+
+.button {
+    position: fixed;
+    top: 30px;
+    right: 30px;
+    width: 50px;
+    height: 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    z-index: 1001;
+}
+
+.button span {
+    display: block;
+    width: 100%;
+    height: 7px;
+    background-color: var(--second-color);
+    border-radius: 5px;
+    transition: all 0.4s ease;
+}
+
+.button-white {
+    position: absolute;
+}
+
+.button:hover span {
+    opacity: 1;
+}
+
+.button-white span {
+    background-color: #ffffff7b;
+}
+
+.button-white:hover span {
+    background-color: #ffffff;
+}
+
+/* Menu */
+.menu {
+    position: absolute;
+    top: 0;
+    right: -200px;
+    width: 130px;
+    height: auto;
+    background-color: var(--second-color);
+    border-bottom-left-radius: 25px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    transition: right 0.3s ease;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.menu a:hover {
+    background-color: var(--primary-color);
+}
+
+.menu a:nth-child(1) {
+    margin-top: 70px;
+}
+
+.menu.open {
+    right: 0;
+}
+
+.button.open span:nth-child(1) {
+    opacity: 1;
+    background-color: #FFF;
+    transform: translateY(14px) rotate(45deg);
+}
+
+.button.open span:nth-child(2) {
+    background-color: #FFF;
+    width: 7px;
+}
+
+.button.open span:nth-child(3) {
+    opacity: 1;
+    background-color: #FFF;
+    transform: translateY(-14px) rotate(-45deg);
+}
+
+
+.button.scroll-up span:nth-child(1) {
+    width: 80%;
+    transform: translateX(4px)
+}
+
+.button.scroll-up span:nth-child(2) {
+    opacity: 1;
+    width: 70%;
+    transform: translateX(17px) translateY(8.7px) rotate(40deg);
+}
+
+.button.scroll-up span:nth-child(3) {
+    opacity: 1;
+    width: 70%;
+    transform: translateX(-5px) translateY(-6px) rotate(-40deg);
+}
