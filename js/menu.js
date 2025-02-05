@@ -22,6 +22,15 @@ window.addEventListener("scroll", () => {
         menu.classList.add('open');
     }
 
+    if (button.classList.contains("button-white")) {
+        if (window.scrollY > 0) {
+            if (menu.classList.contains("open")) {
+                menu.classList.remove("open");
+                button.classList.remove("open");
+            }
+        }
+    }
+
     if (!button.classList.contains("button-white")) {
         if (window.scrollY > 0) {
             button.classList.add("scroll-up");
