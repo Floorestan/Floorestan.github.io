@@ -40,7 +40,7 @@
 
 /* Menu */
 .menu {
-    position: fixed;
+    position: absolute;
     top: 0;
     right: -200px;
     width: 130px;
