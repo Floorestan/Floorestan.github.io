@@ -8,20 +8,19 @@
 }
 
 body {
-    flex-direction: column;
     background: linear-gradient(135deg, #230b46, #331166);
     color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     text-align: center;
-    height: 100vh;
-    padding: 20px;
+    min-height: 100vh;      
+    padding: 24px 16px;     
 }
 
 .mobile-warning {
-    max-width: 500px;
-    padding: 30px;
+    width: 100%;
+    max-width: 720px;     
+    max-height: 390px; 
+    margin: 24px auto;    
+    padding: 20px;
     border-radius: 15px;
     background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(5px);
@@ -46,6 +45,7 @@ p {
 
 .button-container {
     display: flex;
+    flex-wrap: wrap;
     gap: 15px;
     justify-content: center;
     margin-top: 15px;
@@ -64,12 +64,36 @@ p {
     display: inline-block;
 }
 
+.btn:hover {
+    background-color: #eee;
+    transform: scale(1.05);
+}
+
+/* --- Section CV --- */
+.cv-container {
+    margin-top: 25px;
+}
+
+.cv-container h2 {
+    font-size: 22px;
+    margin-bottom: 15px;
+    color: #fff;
+}
+
+.cv-img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0px 8px 18px rgba(0,0,0,0.3);
+    transition: transform 0.3s ease-in-out;
+}
+
+.cv-img:hover {
+    transform: scale(1.02);
+}
 
 .copyright {
-    position: absolute;
     display: block;
-    left: 50%;
-    bottom: 8px;
-    transform: translate(-50%,0);
+    margin: 32px auto 8px;
     font-size: 10px;
 }
