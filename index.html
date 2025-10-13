@@ -13,6 +13,8 @@
     <link rel="stylesheet" href="css/projects.css">
     <link rel="stylesheet" href="css/contact.css">
     <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/skills.css">
+
 </head>
 
 <body>
@@ -25,7 +27,7 @@
         <div class="right-circle-bar-subtitle"></div>
         <div class="bar-subtitle"></div>
         <div class="subtitle">
-            <p>// Computer Engineering Student</p>  
+            <p>Computer Engineering Student</p>  
         </div>
     </header>
 
@@ -40,26 +42,27 @@
     </svg>
     
     <nav class="menu">
-        <a href="#section-2">PROJECTS</a>
-        <a href="#section-3">CONTACT</a>
+        <a href="#section-2">SKILLS</a>
+        <a href="#section-3">PROJECTS</a>
+        <a href="#section-4">CONTACT</a>
     </nav>
 
     <div class="sections">
         <section id="section-1" class="section">
             <div class="section-title">
-                <span class="title-number">//</span>
-                <h2 class="title-text">Presentation.</h2>
+                <span class="title-number"></span>
+                <h2 class="title-text">Presentation</h2>
             </div>
             <p class="section-text">
                 Hello! I am <strong>Florestan Trillot,</strong>
             </p>
             <p class="section-text">
-                A passionate Computer Engineering student with a keen interest in coding and exploring the endless
-                creative possibilities offered by computer science.
+                A second-year computer engineering student interested in coding and exploring all the possibilities 
+                offered by computer science.
             </p>
             <p class="section-text">
-                This portfolio is an extension of my CV, showcasing a curated selection of projects I have developed
-                during my studies and in my spare time. From academic challenges to personal endeavors, these projects
+                This portfolio is an extension of my CV, showcasing a selection of projects I have developed
+                during my studies and in my spare time. From academic challenges to personal ones, these projects
                 reflect my journey of continuous learning and exploration in the field of technology.
             </p>
             <p class="section-text">
@@ -69,8 +72,80 @@
 
         <section id="section-2" class="section">
             <div class="section-title">
-                <span class="title-number">//</span>
-                <h2 class="title-text">My works.</h2>
+                <span class="title-number"></span>
+                <h2 class="title-text">Skills</h2>
+            </div>
+            <div class="skills-section">
+                <span class="title-skills-section"><strong>Programming</strong></span>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <span>Python</span>
+                    </div>
+                    <div class="skill-card">
+                        <span>C</span>
+                    </div>
+                    <div class="skill-card">
+                        <span>C++</span>
+                    </div>
+                    <div class="skill-card">
+                        <span>Java</span>
+                    </div>
+                    <div class="skill-card">
+                        <span>Dart (Flutter)</span>
+                    </div>
+                </div>
+            </div>
+            <div class="skills-section">
+                <span class="title-skills-section"><strong>Web development</strong></span>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <span>HTML</span>
+                    </div>
+                    <div class="skill-card">
+                        <span>CSS</span>
+                    </div>
+                    <div class="skill-card">
+                        <span>JavaScript<span>
+                    </div>
+                </div>
+            </div>
+            <div class="skills-section">
+                <span class="title-skills-section"><strong>Databases</strong></span>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <span>PostgreSQL</span>
+                    </div>
+                    <div class="skill-card">
+                        <span>SQL</span>
+                    </div>
+                </div>
+            </div>
+            <div class="skills-section">
+                <span class="title-skills-section"><strong>Tools & Environments</strong></span>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <span>Git/GitHub</span>
+                    </div>
+                    <div class="skill-card">
+                        <span>Linux (Ubuntu)</span>
+                    </div>
+                    <div class="skill-card">
+                        <span>IntelliJ<span>
+                    </div>
+                    <div class="skill-card">
+                        <span>VS Code<span>
+                    </div>
+                    <div class="skill-card">
+                        <span>Android Studio<span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="section-3" class="section">
+            <div class="section-title">
+                <span class="title-number"></span>
+                <h2 class="title-text">Projects</h2>
             </div>
             <p class="section-text">
                 Explore a selection of my projects.
@@ -89,6 +164,18 @@
                     </a>
                 </div>
                 <div class="project">
+                    <a href="projects/Energy-load-simulator/page.html" class="project-link">
+                        <div class="project-img">
+                            <img src="projects/Energy-load-simulator/img.png" alt="">
+                        </div>
+                        <span class="project-title"><strong>Energy Load Simulator </strong> | 2022</span>
+                        <div class="project-bar-separation"></div>
+                        <span class="project-description">A Python interactive tool using Tkinter to model and visualize industrial power consumption, 
+                            detect overloads, and simulate load strategies for network optimization.
+                        </span>
+                    </a>
+                </div>                  
+                <div class="project">
                     <a href="projects/F1-driver/page.html" class="project-link">
                         <div class="project-img">
                             <img src="projects/F1-driver/img.png" alt="">
@@ -99,18 +186,6 @@
                             engineering school, focusing on trajectory management and decision-making for a digital race
                             car
                             on different circuits.</span>
-                    </a>
-                </div>
-                <div class="project">
-                    <a href="projects/MyPortfolio/page.html" class="project-link">
-                        <div class="project-img">
-                            <img src="projects/MyPortfolio/img.png" alt="">
-                        </div>
-                        <span class="project-title"><strong>My portfolio </strong> | 2025</span>
-                        <div class="project-bar-separation"></div>
-                        <span class="project-description">This portfolio was designed and developed from scratch to
-                            showcase my projects and skills. Built with HTML, CSS, and JavaScript, it reflects my
-                            attention to detail, UI/UX design, and front-end development abilities..</span>
                     </a>
                 </div>
                 <div class="project">
@@ -127,13 +202,41 @@
                         </span>
                     </a>
                 </div>
+                <div class="project">
+                    <a href="https://floorestan.github.io/todo-list/" target="_blank" class="project-link">
+                        <div class="project-img">
+                            <img src="projects/TodoList/img.png" alt="">
+                        </div>
+                        <span class="project-title"><strong>Todo List</strong> | 2025</span>
+                        <div class="project-bar-separation"></div>
+                        <span class="project-description">
+                            A dynamic to-do list app built with React, featuring reusable components and integration with an external 
+                            API to handle data, loading, and error states.
+                        </span>
+                    </a>
+                </div>
+                <script>
+                    document.querySelectorAll('.project').forEach(project => {
+                      const img = project.querySelector('img');
+                      const srcNormal = img.getAttribute('src');
+                      const srcHover = srcNormal.replace('.png', '-hover.png');
+                  
+                      project.addEventListener('mouseenter', () => {
+                        img.src = srcHover;
+                      });
+                  
+                      project.addEventListener('mouseleave', () => {
+                        img.src = srcNormal;
+                      });
+                    });
+                  </script>
             </div>
         </section>
 
-        <section id="section-3" class="section">
+        <section id="section-4" class="section">
             <div class="section-title">
-                <span class="title-number">//</span>
-                <h2 class="title-text">Contact.</h2>
+                <span class="title-number"></span>
+                <h2 class="title-text">Contact</h2>
             </div>
             <div class="contact-grid">
                 <div class="contact">

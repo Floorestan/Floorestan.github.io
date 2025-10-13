@@ -43,7 +43,7 @@
 .project-name {
     position: relative;
     color: #fff;
-    font-size: 125px;
+    font-size: 100px;
     margin: 0;
     font-weight: bold;
     text-shadow: #ffffff2f 4px 4px 10px;
@@ -94,10 +94,40 @@
     position: relative;
     left: 50%;
     transform: translate(-50%, 0);
-    width: 1150px;
+    width: 50%;
     box-shadow: #361d5c51 0px 0px 9px;
 }
 
 .presentation-page img {
     width: 100%;
+}
+
+.display-horizontal-screen {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-inline: 15%;
+    margin-top: 15px;
+}
+
+.display-horizontal-screen img {
+    width: 40%;
+    padding: 0.8rem 1rem;
+}
+
+.display-vertical-screen {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-inline: 15%;
+    margin-top: 15px;
+}
+
+.display-vertical-screen img {
+    width: 20%;
+    padding: 0.8rem 1rem;
 }

@@ -1,0 +1,39 @@
+@import url('colors.css');
+
+.skills-section{
+    color: var(--second-color);
+    margin-bottom: 15px;
+    border-radius: 1.3rem;  
+    box-shadow: #361d5c51 2px 2px 5px;
+    padding: 20px;
+    margin: 25px 15%;
+    transform: scale(1);
+}
+
+.skills-section:hover{
+    box-shadow: #361d5c51 3px 3px 7px;
+    transform: scale(1.005);
+}
+
+.title-skills-section {
+    font-size: 25px;
+    margin: 0 5%;
+}
+
+.skills-grid {
+    display: flex;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    margin-inline: 15%;
+    margin-top: 15px;
+}
+
+.skill-card {
+    padding: 0.8rem 1rem;
+    cursor: default;
+}
+
+.skill-card span {
+    color: var(--second-color);
+    font-size: 20px;
+}

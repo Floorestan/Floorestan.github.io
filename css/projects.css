@@ -21,25 +21,17 @@
     margin-bottom: 1.5rem;
     padding: 1rem;
     border-radius: 1.3rem;
-    box-shadow: #361d5c51 3px 3px 7px;
+    box-shadow: #361d5c51 2px 2px 5px;
     position: relative;
     overflow: hidden;
     cursor: pointer;
     transition: all 0.3s ease;
 }
 
-.project:nth-of-type(3) {
-    width: 650px;
-}
-
-.project:nth-of-type(4) {
-    width: 450px;
-}
-
 
 .project:hover {
     height: 360px;
-    box-shadow: #361d5c51 8px 8px 7px;
+    box-shadow: #361d5c51 4px 4px 5px;
 }
 
 .project-img {
@@ -85,7 +77,7 @@
     height: 2px;
     left: 7%;
     top: 303px;
-    transition: all 0.5s ease-in;
+    transition: all 0.2s ease-in;
 }
 
 .project:hover .project-bar-separation {
@@ -99,10 +91,10 @@
     bottom: 15px;
     font-size: 17px;
     color: var(--second-color);
-    transition: all 0.3s ease;
     margin-right: 35px;
 }
 
 .project:hover .project-description {
     opacity: 1;
+    transition: all 0.4s ease-in;
 }
